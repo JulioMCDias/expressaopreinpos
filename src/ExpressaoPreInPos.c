@@ -23,7 +23,7 @@ int main(void) {
 	int w = 0;
 	while(1){
 	w = 0;
-		printf("\n|============= Converter expressoes Pre, Pos e In Fixo =================|\n");
+	printf("\n|============= Converter expressoes Pre, Pos e In Fixo =================|\n");
 	printf("| Expressao: ");
 	fgets(expressao, TAM_EXPRESSAO, stdin);
 
@@ -33,10 +33,8 @@ int main(void) {
 		posFixoCriaArvore(&no, expressao);
 	else if(validaPreFixo(expressao, &w))
 		preFixoCriaArvore(&no,expressao);
-	else{
+	else
 		printf("%s",telaErro);
-	//	return EXIT_SUCCESS;
-	}
 
 	printf("\n--------- In Fixo ------------\n");
 	saidaInFixo(no, 0);
